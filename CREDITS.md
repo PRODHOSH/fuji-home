@@ -17,6 +17,11 @@ Fuji Home stands on other people's work. Thank you.
 - **ESPN**: public NBA scoreboard and schedule data, used by the NBA add-on. Not affiliated with or endorsed by
   ESPN or the NBA; team logos belong to their owners.
 
+## Stickers
+
+- The stickers in the README (`docs/stickers/`) are from **[Stick It Up](https://stickitupx.com/stickers)** by
+  Samiran De, under the MIT License ([`docs/stickers/LICENSE`](docs/stickers/LICENSE)).
+
 ## Font
 
 - **[Outfit](https://fonts.google.com/specimen/Outfit)**, Copyright The Outfit Project Authors, under the

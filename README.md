@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/logo.svg" width="120" alt="Fuji Home logo: Mount Fuji in front of a red sun, as a round sticker">
+<img src="docs/stickers/japan-flag.svg" width="64" alt="">&nbsp;&nbsp;&nbsp;<img src="docs/logo.svg" width="120" alt="Fuji Home logo: Mount Fuji in front of a red sun, as a round sticker">&nbsp;&nbsp;&nbsp;<img src="docs/stickers/sparkles.svg" width="56" alt="">
 
 # Fuji Home
 
@@ -12,6 +12,7 @@
 [![Built on CleanYourTV](https://img.shields.io/badge/built%20on-CleanYourTV-F7879C)](https://github.com/Gathin23/cleanyourtv)
 [![License: MIT](https://img.shields.io/badge/license-MIT-FF5B4F)](#license)
 
+[The story](#the-story) ·
 [What it is](#what-it-is) ·
 [Install](#install-with-claude-code) ·
 [Build](#build-it-yourself) ·
@@ -27,7 +28,28 @@
 
 </div>
 
+## The story
+
+<img src="docs/stickers/japan-stamp.svg" width="170" align="right" alt="A postage-stamp sticker of Mount Fuji and a pagoda">
+
+Two years ago I went to Japan, and I haven't stopped thinking about Mount Fuji since. Seeing it in person, with
+the snow on top and the whole sky around it, is honestly my favourite thing ever. I love Japan in general, but
+Fuji is the one.
+
+Back home I live in Apple's world: a Mac, an iPhone, and that lock screen where the clock tucks behind the
+picture. Then I'd walk into the living room and the TV greeted me with a wall of ads and "recommended for you".
+It felt like a different century.
+
+So I fixed it. I wanted the TV to feel like the rest of my stuff, calm and clean like an Apple TV, and I wanted
+Fuji on it. My parents use this TV every day too, so it had to be simple enough for them. Fuji Home is the result: my favourite mountain, a big clock behind it, and the apps my family
+actually uses. If you love Japan, or you just want your TV to stop shouting at you, I hope it makes yours a bit
+calmer too.
+
+<br clear="right">
+
 ## What it is
+
+<img src="docs/stickers/mochi-cool.svg" width="96" align="right" alt="">
 
 Most Android TV home screens are a billboard. Rows of recommendations, sponsored tiles and trailers that start
 playing on their own, and the app you wanted is somewhere three rows down. Fuji Home replaces all of that with
@@ -55,6 +77,8 @@ afterwards. Your streaming apps and their logins are never touched.
 
 ## Tested on a real TV, with a way back
 
+<img src="docs/stickers/peace.svg" width="90" align="left" alt="">
+
 Fuji Home runs every day on my family's TV, a 2 GB Android TV 10 set. It went through a full debloat, a launcher
 swap and several restarts there, and Netflix, Hotstar, YouTube and the rest stayed logged in the whole time.
 
@@ -63,6 +87,8 @@ off, all the TV's settings, the home screen and the screensaver. It also writes 
 exact TV. If you ever want things the way they were, you run that one script and it switches everything back.
 It even refuses to run on a different TV by mistake. Nothing is uninstalled and no app's data is ever cleared,
 so there's nothing that can't be undone, with the script or with just the remote.
+
+<br clear="left">
 
 ## How it fits together
 
@@ -90,6 +116,8 @@ You also need a computer on the same Wi-Fi, and Developer options switched on on
 **Developer options** and turn on **USB debugging** (and **Network debugging**, if your TV shows it).
 
 ## Install with Claude Code
+
+<img src="docs/stickers/mochi-rocket.svg" width="96" align="right" alt="">
 
 The easiest way is to let [Claude Code](https://claude.com/claude-code) do it. Open a terminal, start Claude
 Code, and paste the prompt from **[PROMPT.md](PROMPT.md)** with your TV's model filled in.
@@ -133,45 +161,25 @@ uninstall Fuji Home while the old launcher is switched off.** Turn the old one b
 
 ## Make it yours
 
-Everything personal lives in one small file,
-[`app/src/main/res/values/config.xml`](app/src/main/res/values/config.xml). Set your city's latitude and
-longitude for the weather, and set `live_tv_package` to your TV maker's Live TV app if you want it under Inputs.
-Rebuild and reinstall after any change. Your dock order and wallpaper choice are kept.
+<img src="docs/stickers/mochi-coffee.svg" width="96" align="right" alt="">
 
-The dock starts with a few common apps, set in the `DOCK` list at the top of
-[`HomeActivity.java`](app/src/main/java/com/protv/fujihome/HomeActivity.java). Apps you don't have are simply
-skipped. After that you arrange it on the TV itself: hold OK on an app to move or remove it, and add any app
-from ••• → All apps by holding OK on it.
-
-To add your own wallpaper, drop the photo into `wallpapers-src/`, add a line for it to
-[`wallpapers.json`](wallpapers.json), and run the two scripts below. The second one draws every wallpaper with
-the clock on it, so you can check the time reads well before it goes on the TV. Set `"depth": true` for photos
-with a clear skyline to get the clock-behind-the-mountain effect.
-
-```bash
-python3 -m venv tools/venv && tools/venv/bin/pip install -r tools/requirements.txt
-tools/venv/bin/python tools/make_wallpapers.py
-tools/venv/bin/python tools/preview_wallpapers.py
-```
+1. **Your city:** set the weather location in [`config.xml`](app/src/main/res/values/config.xml), then rebuild.
+2. **Your apps:** hold OK on a dock app to move or remove it, and add apps from ••• → All apps.
+3. **Your wallpapers:** add a photo to [`wallpapers-src/`](wallpapers-src) and a line to
+   [`wallpapers.json`](wallpapers.json), then run `tools/make_wallpapers.py` (after `pip install -r tools/requirements.txt`).
 
 ## Add-ons
 
-The default build is just the home screen. Two extras come with it, both switched off until you turn them on in
-`config.xml`. PROMPT.md has a one-line request for each, if you'd rather Claude Code did it.
+<img src="docs/stickers/flame.svg" width="72" align="right" alt="">
 
-**NBA scores.** Set `nba_team` to your team's ESPN abbreviation (`gs`, `lal`, `bos`, `ny` and so on). A small
-pill in the corner then shows the next game in your local time, or the last result. While a game is live, a
-proper scoreboard with both logos appears under the clock and updates every thirty seconds.
+The default build is just the home screen. These two are my own extras, off until you switch them on in
+[`config.xml`](app/src/main/res/values/config.xml).
 
-**Tamil calendar.** Set `addon_tamil_calendar` to `true`. The ••• menu gains a Tamil calendar that shows the
-day's sheet from [tamildailycalendar.com](https://www.tamildailycalendar.com) exactly as they publish it, with
-left and right moving between days. If you also run `python3 tools/fetch_tamil_calendar.py 2026 2027` before
-building, the date line shows festivals and vratham days (Ekadasi, Pradosham, Pournami, Amavasai and others),
-and on Pongal and Deepavali the wallpaper changes for the day.
-
-The calendar's content belongs to tamildailycalendar.com, and this repo doesn't copy or include it. The app loads
-their published page, and the script reads their public lists on your own machine. They don't offer an official
-API, so please go easy on their site.
+1. **NBA scores.** I'm a huge NBA fan, so I wanted my team's next game, and the live score during a game, right
+   on Home. Set `nba_team` (like `gs` or `lal`); scores come from ESPN's public scoreboard.
+2. **Tamil calendar.** I made this for my parents, who check the daily Tamil calendar every morning. Set
+   `addon_tamil_calendar` to `true`; it shows the day's sheet from
+   [tamildailycalendar.com](https://www.tamildailycalendar.com) (their content, not included in this repo).
 
 ## Getting your old home back
 
@@ -205,6 +213,8 @@ it only goes online for the things below.
 | [`PROMPT.md`](PROMPT.md) | The prompt for installing with Claude Code. |
 
 ## FAQ
+
+<img src="docs/stickers/cat.svg" width="90" align="right" alt="">
 
 <details>
 <summary><b>Will this break my TV?</b></summary>
@@ -302,7 +312,8 @@ Wallpapers, fixes, reports that it works on your TV, and new add-ons are all wel
 Fuji Home is built on [CleanYourTV](https://github.com/Gathin23/cleanyourtv) by Gathin23. Its safe debloat
 method, its tools and its Home-redirect idea made this possible, and the gentle helper here is adapted from its
 HomeKeyService. Weather comes from [Open-Meteo](https://open-meteo.com), NBA scores from ESPN's public data, and
-the Tamil calendar from [tamildailycalendar.com](https://www.tamildailycalendar.com). The font is
+the Tamil calendar from [tamildailycalendar.com](https://www.tamildailycalendar.com). The stickers in this
+README are from [Stick It Up](https://stickitupx.com/stickers) by Samiran De (MIT). The font is
 [Outfit](https://fonts.google.com/specimen/Outfit), and the wallpapers are by photographers on
 [Unsplash](https://unsplash.com). Every source is listed in [CREDITS.md](CREDITS.md).
 
@@ -313,3 +324,10 @@ Fuji Home isn't affiliated with Apple, Google, ESPN, the NBA or any TV maker.
 The code is under the [MIT License](LICENSE): use it, change it and share it, as long as the copyright notice
 stays. The Outfit font is under the [SIL Open Font License](FONT-LICENSE-OFL.txt), and the wallpapers are under
 the [Unsplash License](https://unsplash.com/license).
+
+<div align="center">
+<br>
+<img src="docs/stickers/mochi-heart.svg" width="72" alt="">&nbsp;&nbsp;<img src="docs/stickers/heart.svg" width="56" alt="">
+<br>
+<sub>Made with love for Mount Fuji, and for one family's TV.</sub>
+</div>
