@@ -13,6 +13,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-FF5B4F)](#license)
 
 [The story](#the-story) ·
+[Before and after](#before-and-after) ·
 [What it is](#what-it-is) ·
 [Install](#install-with-claude-code) ·
 [Build](#build-it-yourself) ·
@@ -46,6 +47,16 @@ actually uses. If you love Japan, or you just want your TV to stop shouting at y
 calmer too.
 
 <br clear="right">
+
+## Before and after
+
+It starts on what most Android TVs greet you with: a sponsored banner, a trailer playing on its own, and rows of
+"recommended" tiles mixed with ads. Then it sweeps across to the same TV with Fuji Home.
+
+<div align="center">
+<img src="docs/before-after.webp" width="900" alt="A divider sweeping across the screen, from a cluttered stock home screen full of ads to Fuji Home">
+<br><sub>The "before" is a typical stock home screen, recreated. The "after" is my TV.</sub>
+</div>
 
 ## What it is
 
