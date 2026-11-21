@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Fuji Home">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7879C"/>
+      <stop offset="0.55" stop-color="#FFC9A3"/>
+      <stop offset="1" stop-color="#FFE7CF"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4C5FD5"/>
+      <stop offset="1" stop-color="#232A7A"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6FD8"/>
+      <stop offset="1" stop-color="#1D2C78"/>
+    </linearGradient>
+    <clipPath id="disc"><circle cx="128" cy="128" r="110"/></clipPath>
+  </defs>
+
+  <!-- the sticker: a white die-cut edge with a soft shadow -->
+  <circle cx="128" cy="131" r="122" fill="#000000" opacity="0.12"/>
+  <circle cx="128" cy="128" r="122" fill="#FFFFFF"/>
+
+  <g clip-path="url(#disc)">
+    <rect x="0" y="0" width="256" height="256" fill="url(#sky)"/>
+
+    <!-- the sun, low behind the peak -->
+    <circle cx="128" cy="104" r="50" fill="#FF5B4F"/>
+
+    <!-- mountain -->
+    <path d="M8 206 L110 90 Q128 74 146 90 L248 206 Z" fill="url(#rock)"/>
+    <!-- snow cap, soft drips -->
+    <path d="M89 114 L110 90 Q128 74 146 90 L167 114 Q160 124 151 115 Q145 132 136 116 Q128 126 120 116 Q111 132 105 115 Q96 124 89 114 Z" fill="#FFFFFF"/>
+    <path d="M146 90 L190 156" stroke="#6E80E8" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+
+    <!-- cloud bands across the slopes -->
+    <g fill="#FFFFFF">
+      <rect x="30" y="150" width="70" height="12" rx="6"/>
+      <rect x="48" y="138" width="40" height="12" rx="6"/>
+      <rect x="160" y="160" width="68" height="12" rx="6"/>
+      <rect x="176" y="148" width="36" height="12" rx="6"/>
+    </g>
+
+    <!-- lake with ripples -->
+    <rect x="0" y="200" width="256" height="56" fill="url(#lake)"/>
+    <g stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.75">
+      <path d="M70 216 H112"/><path d="M136 216 H190"/><path d="M92 230 H164"/>
+    </g>
+
+    <!-- sakura branch from the top left -->
+    <path d="M14 46 Q46 52 66 40 Q78 33 92 36" stroke="#6B3A2E" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M44 48 Q50 60 46 70" stroke="#6B3A2E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <g fill="#FFB7C9">
+      <circle cx="62" cy="36" r="7"/><circle cx="70" cy="44" r="7"/><circle cx="58" cy="46" r="7"/>
+      <circle cx="88" cy="30" r="6"/><circle cx="95" cy="38" r="6"/>
+      <circle cx="46" cy="72" r="6"/><circle cx="38" cy="66" r="5"/>
+    </g>
+    <g fill="#FF6F91"><circle cx="64" cy="42" r="2.6"/><circle cx="91" cy="34" r="2.2"/><circle cx="43" cy="69" r="2.2"/></g>
+  </g>
+</svg>
