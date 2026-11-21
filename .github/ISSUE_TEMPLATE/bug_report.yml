@@ -1,0 +1,40 @@
+name: Bug report
+description: Something on Fuji Home doesn't work or looks wrong
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks! Please don't include IP addresses, Wi-Fi names, emails or serial numbers. Blur them in screenshots."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Press Home\n2. Hold OK on Netflix\n3. ..."
+  - type: input
+    id: tv
+    attributes:
+      label: TV model and Android version
+      placeholder: "Sony KD-55X80J, Android TV 10"
+    validations:
+      required: true
+  - type: dropdown
+    id: home
+    attributes:
+      label: How is Fuji Home set as home?
+      options:
+        - Not set as home, opened as an app
+        - Accessibility helper (option A)
+        - Stock launcher switched off (option B)
+        - Not sure
+  - type: textarea
+    id: shots
+    attributes:
+      label: Screenshot or log
+      description: "A screenshot, or `adb logcat -d | grep -i fujihome`. Nothing from inside other apps or Settings."

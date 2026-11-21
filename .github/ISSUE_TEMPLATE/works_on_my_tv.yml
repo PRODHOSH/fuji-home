@@ -1,0 +1,46 @@
+name: Works on my TV
+description: Tell us Fuji Home runs on your TV (or doesn't)
+labels: [tv-report]
+body:
+  - type: input
+    id: tv
+    attributes:
+      label: TV model
+      placeholder: "TCL 55P735"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      placeholder: "Google TV, Android 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: How did it go?
+      options:
+        - Works great
+        - Works, with small issues
+        - Doesn't work
+    validations:
+      required: true
+  - type: dropdown
+    id: home
+    attributes:
+      label: How did you make it home?
+      options:
+        - Accessibility helper (option A)
+        - Stock launcher switched off (option B)
+        - Just opened it as an app
+  - type: input
+    id: stock
+    attributes:
+      label: Stock launcher package (if you switched it off)
+      placeholder: "com.google.android.tvlauncher"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything others with this TV should know. No IPs, Wi-Fi names or serial numbers, please.

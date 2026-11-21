@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Debloat or ADB connection help
+    url: https://github.com/Gathin23/cleanyourtv/blob/main/docs/TROUBLESHOOTING.md
+    about: Connecting to the TV and switching apps off are CleanYourTV's tools. Their troubleshooting guide covers most problems.
+  - name: Security problem
+    url: https://github.com/PRODHOSH/fuji-home/security/advisories/new
+    about: Please report security problems privately, not as an issue.

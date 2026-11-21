@@ -1,0 +1,22 @@
+name: Idea or add-on
+description: Suggest a feature, a widget or an improvement
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+      description: Who would use it? What does it replace?
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Fits Fuji Home
+      options:
+        - label: It can be an add-on, off by default, switched on in config.xml
+        - label: It doesn't need an account, tracking or a heavy library
