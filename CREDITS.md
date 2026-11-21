@@ -7,6 +7,12 @@ Fuji Home stands on other people's work. Thank you.
 - **[CleanYourTV](https://github.com/Gathin23/cleanyourtv)** by Gathin23, MIT. The safe debloat procedure, the
   ADB tools and the Home guard. `HomeRedirectService` is adapted from its HomeKeyService.
 
+## Images
+
+- **The "before" screenshot** (`docs/before.jpg`, and the before half of `docs/before-after.webp` and the slider
+  page) is cropped from `docs/stock-home.jpg` in [CleanYourTV](https://github.com/Gathin23/cleanyourtv),
+  Copyright (c) 2026 Gathin, under the MIT License.
+
 ## Data
 
 - **[tamildailycalendar.com](https://www.tamildailycalendar.com)**: the Tamil daily calendar sheets and festival

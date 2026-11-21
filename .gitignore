@@ -15,3 +15,5 @@ shots/
 
 # Tamil calendar data: it belongs to tamildailycalendar.com; make it locally with tools/fetch_tamil_calendar.py
 app/src/main/assets/tamil/
+config.bat
+node_modules
