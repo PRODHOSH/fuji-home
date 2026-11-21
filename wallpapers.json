@@ -1,0 +1,112 @@
+[
+ {
+  "id": "fuji",
+  "name": "Mount Fuji",
+  "file": "fuji.jpg",
+  "top": 0.0,
+  "depth": true
+ },
+ {
+  "id": "matterhorn_sunset",
+  "name": "Matterhorn Sunset",
+  "file": "matterhorn_sunset.jpg",
+  "top": 0.0,
+  "depth": true
+ },
+ {
+  "id": "kailash",
+  "name": "Mount Kailash",
+  "file": "kailash_night.jpg",
+  "top": 1.0,
+  "depth": true,
+  "edge": 18
+ },
+ {
+  "id": "himalaya_dawn",
+  "name": "Himalaya Dawn",
+  "file": "himalaya_dawn.jpg",
+  "top": 1.0,
+  "depth": true
+ },
+ {
+  "id": "himalaya_gold",
+  "name": "Himalaya Gold",
+  "file": "himalaya_gold.jpg",
+  "top": 0.62,
+  "depth": true,
+  "edge": 18,
+  "shade": 0.15
+ },
+ {
+  "id": "dolomites",
+  "name": "Dolomites",
+  "file": "dolomites.jpg",
+  "top": 0.0,
+  "shade": 0.25
+ },
+ {
+  "id": "carezza",
+  "name": "Lago di Carezza",
+  "file": "carezza.jpg",
+  "top": 0.3,
+  "shade": 0.38
+ },
+ {
+  "id": "lac_blanc",
+  "name": "Lac Blanc, Mont Blanc",
+  "file": "lac_blanc.jpg",
+  "top": 0.0,
+  "shade": 0.2
+ },
+ {
+  "id": "lauterbrunnen",
+  "name": "Lauterbrunnen",
+  "file": "lauterbrunnen.jpg",
+  "top": 0.3,
+  "shade": 0.38
+ },
+ {
+  "id": "lavender",
+  "name": "Provence Lavender",
+  "file": "lavender.jpg",
+  "top": 0.2,
+  "shade": 0.2
+ },
+ {
+  "id": "moraine",
+  "name": "Moraine Lake",
+  "file": "moraine.jpg",
+  "top": 0.0,
+  "shade": 0.38
+ },
+ {
+  "id": "beach",
+  "name": "Beach Sunrise",
+  "file": "beach.jpg",
+  "top": 0.1,
+  "shade": 0.35
+ },
+ {
+  "id": "palm",
+  "name": "Palm Sunset",
+  "file": "beach_palm.jpg",
+  "top": 0.3,
+  "shade": 0.2
+ },
+ {
+  "id": "fest_diya",
+  "name": "Deepavali",
+  "file": "fest_diya.jpg",
+  "top": 0.5,
+  "shade": 0.2,
+  "festival": true
+ },
+ {
+  "id": "fest_pongal",
+  "name": "Pongal",
+  "file": "fest_pongal.jpg",
+  "top": 0.0,
+  "shade": 0.4,
+  "festival": true
+ }
+]

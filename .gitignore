@@ -1,0 +1,17 @@
+# Build output
+build/
+.gradle/
+*.apk
+*.aab
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# Your own files, never committed
+tools/venv/
+backup*/
+shots/
+
+# Tamil calendar data: it belongs to tamildailycalendar.com; make it locally with tools/fetch_tamil_calendar.py
+app/src/main/assets/tamil/

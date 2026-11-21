@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Your city and team. Change these, rebuild, and reinstall. -->
+<resources>
+    <!-- Weather next to the date (Open-Meteo, no account). Latitude and longitude of your city. -->
+    <string name="weather_latitude" translatable="false">35.6762</string>
+    <string name="weather_longitude" translatable="false">139.6503</string>
+    <!-- "auto" uses the city's own timezone. -->
+    <string name="weather_timezone" translatable="false">auto</string>
+
+    <!-- ADD-ON, off by default. NBA scores: a small pill with the next game or last result, and a scoreboard
+         under the clock while a game is live. Your team as ESPN abbreviates it (gs, lal, bos, ny, ...). -->
+    <string name="nba_team" translatable="false"></string>
+
+    <!-- ADD-ON, off by default. Tamil calendar: tamildailycalendar.com's daily sheet under the ••• menu, and
+         (after tools/fetch_tamil_calendar.py) the festival and vratham line under the clock. -->
+    <bool name="addon_tamil_calendar">false</bool>
+
+    <!-- Your TV maker's Live TV / tuner app, offered under Inputs as "TV". Leave it if you don't know it:
+         a missing app is simply skipped. Find yours with: adb shell pm list packages | grep -i tv -->
+    <string name="live_tv_package" translatable="false">com.smartdevice.livetv</string>
+</resources>

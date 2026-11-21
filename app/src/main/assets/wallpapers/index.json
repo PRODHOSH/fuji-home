@@ -1,0 +1,92 @@
+[
+ {
+  "id": "fuji",
+  "name": "Mount Fuji",
+  "depth": true,
+  "festival": false
+ },
+ {
+  "id": "matterhorn_sunset",
+  "name": "Matterhorn Sunset",
+  "depth": true,
+  "festival": false
+ },
+ {
+  "id": "kailash",
+  "name": "Mount Kailash",
+  "depth": true,
+  "festival": false
+ },
+ {
+  "id": "himalaya_dawn",
+  "name": "Himalaya Dawn",
+  "depth": true,
+  "festival": false
+ },
+ {
+  "id": "himalaya_gold",
+  "name": "Himalaya Gold",
+  "depth": true,
+  "festival": false
+ },
+ {
+  "id": "dolomites",
+  "name": "Dolomites",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "carezza",
+  "name": "Lago di Carezza",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "lac_blanc",
+  "name": "Lac Blanc, Mont Blanc",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "lauterbrunnen",
+  "name": "Lauterbrunnen",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "lavender",
+  "name": "Provence Lavender",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "moraine",
+  "name": "Moraine Lake",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "beach",
+  "name": "Beach Sunrise",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "palm",
+  "name": "Palm Sunset",
+  "depth": false,
+  "festival": false
+ },
+ {
+  "id": "fest_diya",
+  "name": "Deepavali",
+  "depth": false,
+  "festival": true
+ },
+ {
+  "id": "fest_pongal",
+  "name": "Pongal",
+  "depth": false,
+  "festival": true
+ }
+]
