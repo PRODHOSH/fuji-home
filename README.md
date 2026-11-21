@@ -56,6 +56,8 @@ It starts on what most Android TVs greet you with: a sponsored banner, a trailer
 <div align="center">
 <img src="docs/before-after.webp" width="900" alt="A divider sweeping across the screen, from a cluttered stock home screen full of ads to Fuji Home">
 <br><sub>The "before" is a typical stock home screen, recreated. The "after" is my TV.</sub>
+<br><br>
+<a href="https://prodhosh.github.io/fuji-home/compare.html"><b>Drag the slider yourself →</b></a>
 </div>
 
 ## What it is
