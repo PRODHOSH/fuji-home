@@ -10,8 +10,6 @@ build, once a year after the site publishes the next one. Standard library only:
 
     python3 tools/fetch_tamil_calendar.py 2026 2027
 """
-import utils.transport
-import utils.session
 import json
 import os
 import re
